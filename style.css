@@ -1,0 +1,496 @@
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 90px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sun-icon {
+    display: block;
+    cursor: pointer;
+    margin-left: 20%;
+    transition: transform 0.5s ease, filter 1.5s ease;
+}
+
+.moon-icon {
+    display: none;
+    cursor: pointer;
+    margin-left: 20%;
+    transition: transform 0.5s ease, filter 1.5s ease;
+}
+
+.dark-mode .sun-icon {
+    display: none;
+}
+
+.dark-mode .moon-icon {
+    display: block;
+}
+
+.dark-mode {
+    background-color: #000a1b;
+    color: #fff;
+    transition: background-color 1.5s ease, color 1.5s ease;
+}
+
+.light-mode {
+    background-color: rgb(215, 237, 255);
+    color: #000000;
+    transition: background-color 1.5s ease, color 1.5s ease;
+}
+
+.dark-mode footer {
+    background-color: #000611;
+    outline: 1px solid white;
+    transition: background-color 1.5s ease, outline 1.5s ease;
+}
+
+.light-mode footer {
+    background-color: rgb(188, 228, 255);
+    outline: 1px solid black;
+    transition: background-color 1.5s ease, outline 1.5s ease;
+}
+
+.dark-mode #span2 {
+    color: rgb(0, 162, 255);
+}
+
+.light-mode #span2 {
+    color:rgb(0, 107, 168);
+}
+
+.dark-mode header {
+    background-color: #000a1b;
+    outline: solid 1px rgb(145, 145, 145);
+    transition: background-color 1.5s ease, outline 1.5s ease;
+}
+
+.light-mode header {
+    background-color: rgb(210, 237, 255);
+    outline: solid 1px rgb(90, 90, 90);
+    transition: background-color 1.5s ease, outline 1.5s ease;
+}
+
+.dark-mode #txt1 {
+    outline: solid 1px rgb(145, 145, 145);
+    filter: drop-shadow(5px 5px 10px rgb(0, 0, 0));
+    transition: outline 1.5s ease;
+}
+
+.light-mode #txt1 {
+    outline: solid 1px rgb(90, 90, 90);
+    filter: drop-shadow(5px 5px 10px rgb(0, 0, 0));
+    transition: outline 1.5s ease;
+}
+
+.dark-mode #button1 {
+    background-color: #001c4d;
+    outline: 1px solid rgb(160, 160, 160);
+    color: white;
+    transition: transform 0.5s ease, background-color 1.5s ease, outline 1.5s ease, color 1.5s ease;
+}
+
+.dark-mode #button1:hover {
+    transform: scale(1.1);
+    background-color: #00102b;
+    color: rgb(173, 173, 173);
+    outline: solid 1px white;
+    transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease, outline 0.5s ease;
+    text-decoration: underline solid 1px white;
+}
+
+.light-mode #button1 {
+    background-color: rgb(215, 237, 255);
+    outline: 1px solid rgb(172, 172, 172);
+    color: rgb(0, 0, 0);
+    transition: transform 0.5s ease, background-color 1.5s ease, outline 1.5s ease, color 1.5s ease;
+}
+
+.light-mode #button1:hover {
+    transform: scale(1.1);
+    background-color: rgb(180, 220, 247);
+    color: rgb(0, 0, 0);
+    outline: solid 1px rgb(77, 76, 76);
+    transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease, outline 0.5s ease;
+    text-decoration: underline solid 1px rgb(0, 0, 0);
+}
+
+.dark-mode #line {
+    background-image: linear-gradient(to right, rgb(201, 222, 253), rgb(37, 83, 248));
+    transition: background-image 1.5s ease;
+}
+
+.light-mode #line {
+    background-image: linear-gradient(to right, rgb(80, 137, 216), rgb(0, 41, 95));
+    transition: background-image 1.5s ease;
+}
+
+.dark-mode #line1 {
+    background-image: linear-gradient(to right, rgb(201, 222, 253), rgb(37, 83, 248));
+    transition: background-image 1.5s ease;
+}
+
+.light-mode #line1 {
+    background-image: linear-gradient(to right, rgb(80, 137, 216), rgb(0, 41, 95));
+    transition: background-image 1.5s ease;
+}
+
+.dark-mode #background, .dark-mode #f1{
+    outline: 1px solid white;
+    transition: outline 1.5s ease;
+}
+
+.light-mode #background, .light-mode #f1{
+    outline: 1px solid black;
+    transition: outline 1.5s ease;
+}
+
+.dark-mode #about {
+    outline: solid 2px white;
+    transition: outline 1.5s ease;
+}
+
+.light-mode #about {
+    outline: solid 2px black;
+    transition: outline 1.5s ease;
+}
+
+.dark-mode #foda {
+    background-color: rgb(0, 32, 58);
+    outline: solid 3px white;
+    color: white;
+    transition: background-color 1.5s ease, outline 1.5s ease, color 1.5s ease;
+}
+
+.light-mode #foda{
+    background-color: rgb(167, 208, 255);
+    outline: solid 3px black;
+    color: black;
+    transition: background-color 1.5s ease, outline 1.5s ease, color 1.5s ease;
+}
+
+.dark-mode #contact {
+    outline: solid 1px rgb(145, 145, 145);
+    transition: outline 1.5s ease;
+}
+
+.light-mode #contact {
+    outline: solid 1px rgb(90, 90, 90);
+    transition: outline 1.5s ease;
+}
+
+.dark-mode #testimonials, .dark-mode #tmn {
+    outline: solid 2px white;
+    transition: outline 1.5s ease;
+}
+
+.light-mode #testimonials, .light-mode #tmn {
+    outline: solid 2px black;
+    transition: outline 1.5s ease;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    margin-top: -100px;
+    filter: drop-shadow(3px 3px 15px black);
+}
+
+.hdr-container {
+    display: flex;
+    margin-left: 150px;
+    font-weight: bold;
+}
+
+.hdr-container p {
+    margin-right: 60px;
+}
+
+#pa {
+    margin-left: 60px;
+    font-weight: bold;
+}
+
+#pa,
+#hdrhov { 
+    transition: transform 0.5s ease;
+    
+}
+
+#pa:hover,
+#hdrhov:hover {
+    transform: rotate(5deg);
+    text-decoration: underline;
+    transition: transform 0.5s ease;
+}
+
+#ichd {
+    margin-left: 5px;
+}
+
+.mode-container {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+#title {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 30px;
+    filter: drop-shadow(1px 1px 20px black);
+}
+
+#sp1 {
+    text-decoration: underline;
+}
+
+#txt1 {
+    text-align: center;
+    margin-top: -25px;
+    width: 45%;
+    padding: 1px;
+    border-radius: 15px;
+    filter: drop-shadow(1px 1px 20px black);
+}
+
+#txt-container {
+    display: flex;
+    justify-content: center;
+}
+
+#button-container {
+    text-align: center;
+    margin-top: 25px;
+}
+
+#button1 {
+    width: 13%;
+    padding: 18px;
+    border-radius: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease, outline 0.5s ease;
+    filter: drop-shadow(1px 1px 20px black);
+    font-size: 16px;
+}
+
+#txt2-container {
+    text-align: center;
+    margin-top: 0px;
+    padding: 5px;
+}
+
+#txt3-container {
+    text-align: center;
+    margin-top: 60px;
+}
+
+#line {
+    width: 5%;
+    height: 3px;
+    margin-top: -20px;
+    box-shadow: 3px 3px 10px black;
+}
+
+#line-container {
+    display: flex;
+    justify-content: center;
+}
+
+#background {
+    display: flex;
+    background-color: transparent;
+    margin-top: 40px;
+    width: 100%;
+    height: 350px;
+    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.808));
+}
+
+#f1 {
+    width: 33.33%;
+    height: 100%;
+    text-align: center;
+}
+
+#p1 {
+    padding: 5px;
+}
+
+#box1 {
+    margin-top: 5%;
+    transition: transform 0.5s ease, filter 1s ease;
+}
+
+#icon:hover,
+#box1:hover {
+    cursor: pointer;
+    transform: scale(1.1) rotate(7deg);
+    filter: drop-shadow(0px 0px 2px rgb(0, 255, 255));
+    transition: transform 0.5s ease, filter 1s ease;
+}
+
+#about {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-shadow: 5px 5px 15px black;
+}
+
+#tw {
+    filter: drop-shadow(none);
+    width: 650px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#p2 {
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+#span1 {
+    font-weight: bold;
+    text-decoration: underline;
+    margin-left: 1%;
+}
+
+#span2 {
+    text-decoration: underline;
+}
+
+#foda1,
+#foda {
+    width: 100%;
+    height: auto;
+    padding-bottom: 60px;
+    margin-top: 120px;
+}
+
+#titlef {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.cont-container {
+    margin-top: 30px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 100px;
+}
+
+#translate {
+    text-align: center;
+    width: 300px;
+    outline: solid 1px white;
+    padding: 1px;
+    border-radius: 15px;
+    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.514));
+}
+
+#icon {
+    margin-top: 15px;
+    transition: transform 0.5s ease, filter 1s ease;
+}
+
+#txt5 {
+    text-align: center;
+}
+
+.cont-container2 {
+    margin-top: 30px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 100px;
+}
+
+footer {
+    margin-top: 0px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#contact {
+    width: 100%;
+    height: 100px;
+    margin-top: 400px;
+    filter: drop-shadow(3px 3px 15px black);
+}
+
+#contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.sun-icon,
+.moon-icon,
+#iconcontact { transition: transform 0.5s ease, filter 0.5s ease;
+    border-radius: 5px;
+}
+
+.sun-icon:hover,
+.moon-icon:hover,
+#iconcontact:hover {
+    transform: scale(1.1) rotate(7deg);
+    filter: drop-shadow(0px 0px 2px rgb(0, 204, 255));
+    cursor: pointer;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+#testimonials {
+    margin-top: 0px;
+    outline: solid 2px white;
+    width: 100%;
+    height: 340px;
+    filter: drop-shadow(3px 3px 15px rgba(0, 0, 0, 0.616));
+}
+
+.tmn-container {
+    margin-left: 33.33px;
+    padding-top: 30px;
+    display: flex;
+}
+
+#tmn {
+    outline: solid 1px white;
+    width: 30%;
+    padding-bottom: 0px;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    border-radius: 50px;
+    margin-right: 33.33px;
+}
+
+#txt9 {
+    #txt2-container {
+        text-align: center;
+        margin-top: 0px;
+        padding: 5px;
+    }
+}
